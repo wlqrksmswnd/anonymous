@@ -3,14 +3,14 @@ body,html{
     padding: 0;
 }
 
-#everything{
+.everything{
     width: 100vw;
     height: 100vh;
     
 
 }
 
-#top-bar{
+.top-bar{
     width: 100%;
     height: 10%;
     background-color: black;
@@ -20,17 +20,17 @@ body,html{
     align-items: center;
 }
 
-#title{
+.title{
     color: white;
     padding: 30px;
     margin: 0;
 }
 
-#name{
+.name{
     color: white;
 }
 
-#login{
+.login{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,14 +41,60 @@ body,html{
     
 }
 
-#login-button{
+.login-button{
     width: 100px;
     height: 100%;
     border-radius: 6px;
     border: 0;
+    cursor: pointer;
 }
 
-#login-icon{
+.login-icon{
     padding-right: 10px;
     /* transform: scaleX(-1); */
+}
+
+
+.main{
+    width:  100%;
+    background-color: gray;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+}
+
+.write{
+    display :flex;
+
+    width: 90%;
+    height: 10%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.write-button{
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    margin-right: 10px;
+    cursor: pointer;
+
+    
+}
+
+.write-icon{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+
+.post-box{
+    border:1px solid black;  /*위치 잡기 위해 해놓은것이라 나중에 빼야험*/
+    width: 90%;
+    height: 50%;
+
 }
