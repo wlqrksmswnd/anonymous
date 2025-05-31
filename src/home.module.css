@@ -1,0 +1,118 @@
+@import url(font/font.css);
+
+
+.body{
+    flex-grow: 1;
+    padding: 40px;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+}
+
+.postHeader{
+    display: flex;
+    gap: 14px;
+    align-items: end;
+}
+
+#writePost{
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    gap: 10px;
+    opacity: 100%;
+    background-color: #A2D4FF;
+}
+
+
+
+#writePostText{
+    width: 74px;
+    height: 19px;
+    font-family: WantedSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    /* color: #707070; */
+
+    
+
+}
+
+#icon{
+    width: 15px;
+    height: 15px;
+    width: 14.999167442321777;
+    height: 14.1664457321167;
+    top: 2.5px;
+    left: 2.5px;
+
+}
+
+#postsInfo{
+    font-family: WantedSans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #707070;
+
+}
+
+.posts{
+    /* width: 280px; */
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+
+}
+
+#allmine{
+    width: 280px;
+    background-color: black;
+    padding: 4px 6px 4px 6px;
+    border-radius: 8px;
+    gap: 9px;
+}
+
+.postsAll{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+
+
+#all{
+    width: 50%;
+    background-color: #565656;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    gap: 10px;
+    
+}
+#mine{
+    width: 50%;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    border: none;
+    gap: 10px;
+}
+
