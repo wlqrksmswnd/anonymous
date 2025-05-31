@@ -2,6 +2,7 @@ import { useState } from 'react'
 // import './login.css'
 import axios from 'axios';
 import styles from './join.module.css'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -10,6 +11,7 @@ function Join(){
     const [username,setusername] = useState('')
     const [password,setpassword] = useState('')
     const [nickname,setnickname] = useState('')
+    const navigate = useNavigate()
     function register(){
         axios.post('https://community-api.tapie.kr/auth/register',
             {
@@ -19,10 +21,11 @@ function Join(){
             }
         ).then(res => {
       console.log('회원가입 성공:', res.data);
-      navigat('/login');
+      navigate('/login');
     })
     .catch(err => {
       console.error('회원가입 실패:', err.response?.data || err.message);
+      console.log("상태 코드:", error.response.status);
     });
     }
     return(

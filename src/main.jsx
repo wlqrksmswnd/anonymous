@@ -36,6 +36,10 @@ const router = createBrowserRouter([
         path: "writepost",
         element: <WritePost />,
       },
+      {
+        path: "myposts",
+        element: <WritePost />,
+      },
     ],
   },
 ]);
