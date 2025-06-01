@@ -13,7 +13,6 @@ function Post({user}){
         <div id = {styles.title}>{user.title}</div>
         <div className={styles.frame}>
         <div id={styles.username}>{user.author.nickname}·{time}</div>
-        <div></div>
         </div>
         <div id = {styles.content}>{user.content}</div>
     </div>

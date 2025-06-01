@@ -6,20 +6,12 @@ import axios from "axios";
 import { useAuth } from "./AuthContext";
 
 
-// // function logout ({logged,setlogged}){
-// //   axios.post('https://community-api.tapie.kr/auth/logout',{
-// //     withCredentials: true
-// //   }).then(res => {
-// //     console.log(logged)
-// //     settlogged(false)
-// //     window.location.reload()
-// //   })
 
-// }
+
+
 function Header() {
 
-// const [iflogin,setlogin] = useState(false)
-// const { logged, setLogged } = useAuth();
+
 const { logged, logout } = useAuth()
 const navigate = useNavigate()
 const handleClick = () => {

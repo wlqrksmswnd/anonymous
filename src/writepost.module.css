@@ -4,7 +4,6 @@
     justify-content: center;
     position: relative;
     top: 88px;
-    /* align-items: center; */
 }
 
 .write{
@@ -15,8 +14,6 @@
 }
 
 #writepost{
-    /* width: 52px;
-    height: 24px; */
     font-family: WantedSans;
     font-weight: 600;
     font-size: 20px;
@@ -114,11 +111,6 @@
     color: white;
     font-family: WantedSans;
     font-weight: 500;
-    /* font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    gap: 10px; */
-    /* justify-content: center; */
     align-items: flex-start;
     flex-direction: row;
     

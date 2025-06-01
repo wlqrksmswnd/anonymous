@@ -24,8 +24,7 @@ function Join(){
       navigate('/login');
     })
     .catch(err => {
-      console.error('회원가입 실패:', err.response?.data || err.message);
-      console.log("상태 코드:", error.response.status);
+      console.error('회원가입 실패');
     });
     }
     return(

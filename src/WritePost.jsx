@@ -35,9 +35,10 @@ function post(){
     axios.post('https://community-api.tapie.kr/board/posts',{
         "title": title,
         "content": content
-    },      {
+    },
+    {
         withCredentials: true
-    }).then(() => {navigate('/');})
+    }).then(() => {navigate('/')})
 }
 
 }

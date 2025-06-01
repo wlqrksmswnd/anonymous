@@ -22,7 +22,7 @@ export function AuthProvider({ children }) {
     }).then(() => {
       setLogged(false)
     }).catch((err) => {
-      console.error('로그아웃 실패:', err)
+      console.error(err)
     })
   }
 

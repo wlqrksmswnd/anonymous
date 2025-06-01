@@ -8,13 +8,11 @@
     border: solid #EBEBEB 1px;
     padding: 16px;
     gap: 12px;
-    /* justify-content: flex-start; */
     flex-direction: column;
 }
 
 #title{
     width: 208px;
-    /* height: 24px; */
     font-family: WantedSans;
     font-weight: 600;
     font-size: 20px;
@@ -25,8 +23,6 @@
 #username{
     display: flex;
     gap: 4px;
-    /* width: 55px; */
-    /* height: 14px; */
     font-family: WantedSans;
     font-weight: 400;
     font-size: 12px;
@@ -37,7 +33,6 @@
 
 #content{
     width: 207px;
-    /* height: 119px; */
     font-family: WantedSans;
     font-weight: 500;
     font-size: 14px;

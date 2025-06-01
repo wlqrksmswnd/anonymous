@@ -1,14 +1,12 @@
 @import url(font/font.css);
 
 .body{
-    /* margin: 0px; */
     width: 100vw;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     top: 88px;
-    /* padding: 40px; */
     gap: 10px;
 
 }
@@ -25,7 +23,6 @@
 }
 
 #username_input{
-    /* width: 100%; */
     display: flex;
     gap: 9px;
     flex-direction: column;

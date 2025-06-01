@@ -18,8 +18,6 @@ function Home() {
   const [showMine, setShowMine] = useState(false)
   axios.get('https://community-api.tapie.kr/board/posts/search?author=1&author_type=id').then(res => console.log(res))
   useEffect(() => {
-    const root = 'https://community-api.tapie.kr'
-  // axios.get('https://community-api.tapie.kr/board/posts/search?author=@me',{ withCredentials: true })
   axios.get(showMine ? `https://community-api.tapie.kr/board/posts/search?author=@me`:`https://community-api.tapie.kr/board/posts`,{ withCredentials: true })
     .then(response => {
       const data = response.data
@@ -27,7 +25,7 @@ function Home() {
       console.log(data)
     })
     .catch(error => {
-      console.error('데이터 불러오기 실패:', error);
+      console.error(error);
     });
 },[showMine])
   
@@ -36,9 +34,7 @@ function Home() {
     
       <div className={styles.body}>
         <div className={styles.container}>
-          
-        {/* <div className={styles.buttons}>sdhifh</div> */}
-        <div className={styles.postHeader}>
+                  <div className={styles.postHeader}>
         <button id = {styles.writePost} onClick={() => navigate('/writepost')} style={{opacity: logged ? "100%" : "30%"}} disabled = {!logged}><PencilLine size={20} strokeWidth={1.5} id={styles.icon} /><div id = {styles.writePostText}>글 작성하기</div></button>
         <div id = {styles.postsInfo}>{showMine ? `나의 글 ${userdata?.length}개 작성됨`:`전체 글 ${userdata?.length}개 작성됨`}</div>
         </div>

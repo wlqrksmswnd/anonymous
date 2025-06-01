@@ -4,8 +4,7 @@ import styles from './login.module.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-// import Heather from './Header';
-// import './App.css'
+
 import { LogIn } from 'lucide-react';
 function Login(){
     const [username,setusername] = useState('')
@@ -53,7 +52,7 @@ function Login(){
       navigate('/')
     })
     .catch(err => {
-      alert("로그인 실패");
+      alert("로그인 실패")
     });
     }
 }
